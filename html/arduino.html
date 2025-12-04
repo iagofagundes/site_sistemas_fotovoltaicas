@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Sistemas Fotovoltaicos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Sistemas Fotovoltaicos</a>
+            <a href="./Tipos_de_sisitemas.html">Tipos de Sistemas</a>
+            <a href="./Economia.html">Economia e Viabilidade Financeira</a>
+            <a href="./Impacto_ambiental.html">Impacto Ambiental</a>
+            <a href="./intelbras.html">Intelbras</a>
+            <a href="./prog_painel.html">Calculadora</a>
+            <a href="./arduino.html">Arduíno</a>
+            <a href="./contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Entrada e saída digital</h1><br>
+        <h2>Binário</h2>
+        <p>É a forma como o sistema interpreta o sinal recebido: apenas 0 ou 1.</p>
+        <p>O "0" representa um estado desligado/LOW/falso, enquanto o "1" representa ligado/HIGH/verdadeiro.</p>
+        <p>É o resultado final que o microcontrolador ou PLC usa para tomar decisões na lógica de programação.</p>
+        <hr>
+        <p>O controlador gera um valor lógico 0 ou 1, representando a decisão do programa: desligar (0) ou ligar (1).</p>
+        <p>Esse valor binário é a instrução que define se o dispositivo externo deve ser ativado ou não.</p>
+        <h2>Físico</h2>
+        <p>Vem de dispositivos que só podem estar em dois estados, como botões, chaves, sensores magnéticos, fim de curso ou relés.</p>
+        <p>Esses dispositivos mudam entre aberto/fechado ou acionado/não acionado, enviando um sinal simples ao sistema.</p>
+        <p>O controlador detecta essa mudança física e a converte em um estado lógico (0 ou 1).</p>
+        <hr>
+        <p>O sinal binário aciona um dispositivo físico que pode estar apenas ligado ou desligado, como LED, relé, buzina ou válvula.</p>
+        <p>Quando a saída muda de estado, o dispositivo reage imediatamente: liga ao receber um "1" e desliga ao receber um "0".</p>
+        <h2>Volts</h2>
+        <p>O nível de tensão elétrica determina qual estado lógico será interpretado.</p>
+        <p>Tensões próximas de 0 V são lidas como 0 (LOW) e tensões altas (ex.: 3 V, 5 V ou 24 V) são lidas como 1 (HIGH).</p>
+        <p>Cada equipamento possui faixas definidas de tensão para reconhecer corretamente o sinal e evitar leituras incorretas.</p><br>
+        <hr>
+        <p>O valor lógico é convertido em um nível elétrico: tensão baixa para 0 (LOW) e tensão alta para 1 (HIGH).</p>
+        <p>Em microcontroladores, isso geralmente significa 0 V ou 3,3/5 V; em sistemas industriais, 0 V ou 24 V.</p>
+        <p>O dispositivo conectado interpreta essa voltagem como comando de ligar ou desligar.</p>
+
+        <h1>Entrada e saída analógica</h1>
+        <h2>Binário</h2>
+        <p>Embora o sinal chegue como tensão, o microcontrolador só entende números. Então o ADC converte os volts em um valor digital (binário).</p>
+        <p>Exemplo:</p>
+        <p>0 V → 0000000000</p>
+        <p>2,5 V → valor intermediário</p>
+        <p>5 V → 1111111111</p>
+        <hr>
+        <p>Mesmo sendo analógica na prática, a saída muitas vezes é gerada digitalmente via um DAC (Conversor Digital-Analógico). O microcontrolador envia um valor binário, que o DAC converte em tensão contínua proporcional.</p>
+        <p>Exemplo para DAC de 8 bits e 5 V:</p>
+        <p>00000000 → 0 V</p>
+        <p>10000000 → 2,5 V</p>
+        <p>11111111 → 5 V</p>
+        <h2>Físico</h2>
+        <p>É a representação de uma grandeza real do mundo físico  como temperatura, luz, pressão, som ou posição que um sensor converte em uma variação de tensão. Ou seja, o fenômeno físico vira um sinal elétrico analógico.</p>
+        <hr>
+        <p>É a grandeza real que o sistema quer controlar ou influenciar no mundo físico. Por exemplo:</p>
+        <p>LED → intensidade luminosa</p>
+        <p>Motor → velocidade ou posição</p>
+        <p>Aquecedor → temperatura</p>
+        <h2>Volts</h2>
+        <p>É uma tensão elétrica variável e contínua, por exemplo 0 a 5 V ou 0 a 3,3 V, que muda de acordo com o sensor conectado. O dispositivo mede essa variação de tensão para saber o valor do sinal.</p>
+        <hr>
+        <p>É uma tensão elétrica variável que o dispositivo gera, normalmente dentro de uma faixa específica (ex.: 0–5 V ou 0–3,3 V). Essa tensão varia continuamente para representar um valor desejado.
+            Exemplo: controle de brilho de um LED ou velocidade de um motor.</p>
+
+
+    </main><br><br>
+    <footer>
+        by Iago &copy; &trade;
+    </footer>
+</body>
+</html>
