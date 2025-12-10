@@ -16,6 +16,7 @@
             <a href="./intelbras.html">Intelbras</a>
             <a href="./prog_painel.html">Calculadora</a>
             <a href="./arduino.html">Arduíno</a>
+            <a href="./muntimetro.html">Multimetro</a>
             <a href="./contato.html">Contato</a>
         </nav>
     </header>
@@ -68,7 +69,111 @@
         <p>É uma tensão elétrica variável e contínua, por exemplo 0 a 5 V ou 0 a 3,3 V, que muda de acordo com o sensor conectado. O dispositivo mede essa variação de tensão para saber o valor do sinal.</p>
         <hr>
         <p>É uma tensão elétrica variável que o dispositivo gera, normalmente dentro de uma faixa específica (ex.: 0–5 V ou 0–3,3 V). Essa tensão varia continuamente para representar um valor desejado.
-            Exemplo: controle de brilho de um LED ou velocidade de um motor.</p>
+        Exemplo: controle de brilho de um LED ou velocidade de um motor.</p>
+        <br>
+        <br>
+        <h1>O que é Arduino</h1>
+        <h4>Arduino é uma plataforma eletrônica de prototipagem rápida, criada para permitir que qualquer pessoa  mesmo sem muita experiência  consiga montar projetos de eletrônica e programação.</h4>
+        <p>Ele é muito usado em:</p>
+        <p>Robótica</p>
+        <p>Automação residencial</p>
+        <p>Controle de motores e LEDs</p>
+        <p>Sensores ambientais (temperatura, umidade, luz)</p>
+        <p>Projetos escolares e universitários</p>
+        <hr>
+        <h3>A grande vantagem do Arduino é que ele combina:</h3>
+        <p>Hardware aberto (você pode até construir sua própria placa)</p>
+        <p>Software gratuito</p>
+        <br>
+        <br>
+        <h1>O que é um microcontrolador</h1>
+        <p>Um microcontrolador é o cérebro do Arduino.</p>
+        <p>Ele é como um mini computador dentro de um único chip.</p>
+        <h4>Dentro dele existem:</h4>
+        <p>CPU (processa instruções do código)</p>
+        <p>Flash (onde seu programa fica gravado)</p>
+        <p>RAM (usada enquanto o programa roda)</p>
+        <p>Periféricos internos como:</p>
+        <p>Temporizadores (timers)</p>
+        <p>Conversor Analógico-Digital (ADC)</p>
+        <p>Interfaces de comunicação (UART, SPI, I2C)</p>
+        <p>Watchdog (segurança)</p>
+        <hr>
+        <h3>A diferença entre microcontrolador e microprocessador:</h3>
+        <p>Microprocessador (como em computadores): precisa de memória, placa-mãe, periféricos externos.</p>
+        <p>Microcontrolador: tudo integrado em um único chip → menor, barato e eficiente.</p>
+        <br>
+        <br>
+        <h1>Microcontrolador do Arduino</h1>
+        <h4>Modelo</h4>
+        <p>ATmega328P (no Arduino Uno)</p>
+        <h4>Fabricante</h4>
+        <p>Microchip Technology (empresa que comprou a Atmel)</p>
+        <h4>Características principais</h4>
+        <p>8 bits</p>
+        <p>32 KB de memória flash</p>
+        <p>2 KB de RAM</p>
+        <p>16 MHz de clock</p>
+        <p>ADC de 10 bits</p>
+        <br>
+        <br>
+        <h1>Linguagem de programação do Arduino</h1>
+        <p>O Arduino é programado usando uma linguagem baseada em C/C++, porém simplificada para facilitar o aprendizado. Essa versão adaptada é conhecida como Arduino Language.</p>
+        <hr>
+        <h4>Características da Linguagem</h4>
+        <p>É fácil para iniciantes, mas poderosa para projetos avançados.</p>
+        <p>Possui funções prontas para manipular pinos, sensores e módulos.</p>
+        <hr>
+        <h4>O código é organizado em duas partes principais:</h4>
+        <p>setup() – executado uma vez ao ligar o Arduino.</p>
+        <p>loop() – executado continuamente1</p>
+        <h4>Exemplos de Funções Comuns</h4>
+        <p>pinMode(pin, mode) – define o modo do pino (entrada/saída)</p>
+        <p>digitalWrite(pin, HIGH/LOW) – envia sinal digital</p>
+        <p>analogRead(pin) – lê valores analógicos</p>
+        <p>serial.begin(baudrate) – inicia comunicação serial</p>
+        <h1>Onde o Arduino é Programado</h1>
+        <h4>O Arduino pode ser programado em diversas plataformas, sendo as principais:</h4>
+        <h4>Arduino IDE (oficial)</h4>
+        <p>Ambiente padrão e mais utilizado.</p>
+        <p>Disponível para Windows, Linux e macOS.</p>
+        <h4>Arduino IDE 2.x</h4>
+        <p>Versão moderna com:</p>
+        <p>Autocompletar</p>
+        <p>Depurador (debug)</p>
+        <p>Interface melhorada</p>
+        <h4>Arduino Web Editor</h4>
+        <p>Acessado diretamente pelo navegador.</p>
+        <p>Sincroniza projetos na nuvem (Arduino Cloud).</p>
+        <h4>Outras opções de programação</h4>
+        <p>PlatformIO (no VS Code)</p>
+        <p>Atmel Studio</p>
+        <p>Eclipse CDT</p>
+        <h1>Entrada Analógica do Arduino</h1>
+        <p>(Referente a placas como Arduino Uno, Nano e Mega, com microcontrolador ATmega)</p>
+        <h4>Faixa de Tensão da Entrada Analógica</h4>
+        <p>0 a 5 Volts (na maioria das placas de 5 V).</p>
+        <p>0 a 3,3 Volts em placas que operam a 3,3 V.</p>
+        <h4>Resolução em Bits (ADC)</h4>
+        <p>Conversor Analógico-Digital (ADC) de 10 bits.</p>
+        <p>Intervalo numérico: 0 a 1023.</p>
+        <p>Tamanho do passo (quantização):</p>
+        <p>Com 5 V → 4,88 mV por nível</p>
+        <h1>Entrada Digital do Arduino</h1>
+        <p>(Para placas de 5 V como Uno, Nano e Mega)</p>
+        <h4>Nível Lógico LOW</h4>
+        <p>Entre 0 e 0,8 V</p>
+        <h4>Nível Lógico HIGH</h4>
+        <p>Entre 2,0 e 5 V</p>
+        <p>Tensões entre 0,8 V e 2,0 V são consideradas zona incerta.</p>
+        <h1>Saída Digital do Arduino</h1>
+        <h4>Em Placas de 5 V (Uno, Nano, Mega)</h4>
+        <p>Saída LOW: aproximadamente 0 V</p>
+        <p>Saída HIGH: aproximadamente 5 V</p>
+        <h4>Em Placas de 3,3 V (Due, Nano 33 IoT, etc.)</h4>
+        <p>Em Placas de 3,3 V (Due, Nano 33 IoT, etc.)</p>
+
+
 
 
     </main><br><br>
