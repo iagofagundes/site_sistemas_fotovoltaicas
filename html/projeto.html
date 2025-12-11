@@ -24,8 +24,165 @@
     </header>
 <main>
     <h1> ligação eletrônica do arduíno no tinkercad</h1><br>
+    <hr>
     <h2>semáforo</h2>
     <img src="../img/Captura de tela 2025-12-11 144541.png" alt="Tinkercad semaforo">
+    <hr>
+    <br>
+    <h2>7 Segmentos</h2>
+    <img src="../img/Captura de tela 2025-12-11 144612.png" alt="Tinkercad 7 segmentos">
+    <hr>
+    <br>
+    <br>
+    <h1> ligação física no protoboard</h1>
+    <h2>ligação física semáforo</h2>
+    <img src="../img/semaforo.jpg" alt="ligação física semáforo">
+    <br>
+    <hr>
+    <br>
+    <div>
+        <video src="../video/WhatsApp Video 2025-12-04 at 15.56.37.mp4"controls style="height: 340px; width: 340px;"></video>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <h1>código C++ dos níveis de iluminamento com leds e display de 7 segmentos</h1>
+    <p>// C++ code
+        //
+        int analog = 0;<br>
+        void setup()<br>
+        {<br>
+        pinMode(A1, INPUT);    <br>
+        Serial.begin(9600);<br>
+        pinMode(2, OUTPUT);<br>
+        pinMode(3, OUTPUT);<br>
+        pinMode(4, OUTPUT);<br>
+        pinMode(5, OUTPUT);<br>
+        pinMode(6, OUTPUT);<br>
+        pinMode(7, OUTPUT);<br>
+        pinMode(8, OUTPUT);
+        }<br>
+        {<br>
+        analog = analogRead(A1);<br>
+        Serial.println(analog);<br>
+        if (analog <= 99) {<br>
+        digitalWrite(2, HIGH);<br>
+        digitalWrite(3, HIGH);<br>
+        digitalWrite(4, HIGH);<br>
+        digitalWrite(5, HIGH);<br>
+        digitalWrite(6, HIGH);<br>
+        digitalWrite(7, HIGH);<br>
+        digitalWrite(8, LOW);<br>
+        } if (analog >= 100 && analog <= 200) <br>
+        digitalWrite(2, HIGH); <br>
+        digitalWrite(3, LOW);<br>
+        
+        digitalWrite(4, HIGH);<br>
+        digitalWrite(5, LOW);<br>
+        digitalWrite(6, LOW);<br>
+        digitalWrite(7, LOW);v<br><br>
+        digitalWrite(8, LOW);<br>
+        }<br>
+        if (analog >= 200 && analog <=) {<br>
+        digitalWrite(2, HIGH);<br>
+        digitalWrite(3, HIGH);<br>
+        <br>
+        digitalWrite(4, LOW);<br>
+        digitalWrite(5, HIGH);<br>
+        digitalWrite(6, HIGH);<br>
+        digitalWrite(6, HIGH);<br>
+        digitalWrite(7, LOW);<br>
+        digitalWrite(8, HIGH);<br>
+        }<br>
+        if (analog >= 300 && analog 400) {<br>
+        digitalWrite(2, HIGH);<br>
+        digitalWrite(3, HIGH);<br>
+        digitalWrite(4, HIGH);<br>
+        digitalWrite(5, HIGH);<br>
+        digitalWrite(6, LOW);<br>
+        digitalWrite(7, LOW);<br>
+        digitalWrite(8, HIGH);<br>
+        }<br>
+        if (analog >= 400 && analog < 500) { <br>           
+        digitalWrite(2, HIGH);<br>
+        digitalWrite(3, LOW);<br>
+        digitalWrite(4, HIGH);<br>
+        digitalWrite(5, LOW);<br>
+        digitalWrite(6, LOW);<br>
+        digitalWrite(7, HIGH);<br>
+        digitalWrite(8, HIGH);<br>
+        }<br>
+        if (analog >= 500 && analog  600) {<br>
+        digitalWrite(2, LOW);<br>
+        digitalWrite(3, HIGH);<br>
+        digitalWrite(3, HIGH);<br>
+        digitalWrite(3, HIGH); <br>
+        digitalWrite(4, HIGH);<br>
+        digitalWrite(5, HIGH);<br>
+        digitalWrite(6, LOW);<br>
+        digitalWrite(7, HIGH);<br>
+        digitalWrite(8, HIGH);<br>
+        }<br>
+        digitalWrite(2, LOW);<br>
+        digitalWrite(3, LOW);<br>
+        digitalWrite(4, HIGH);<br>
+        digitalWrite(6, HIGH);<br>
+        digitalWrite(7, HIGH);<br>
+        }<br>
+        if (analog >= 700 && analog < 800) {<br>
+        digitalWrite(2, HIGH);<br>
+        digitalWrite(3, HIGH);<br>
+        digitalWrite(4, HIGH);<br>
+        digitalWrite(5, LOW);<br>
+        digitalWrite(6, LOW);<br>
+        digitalWrite(7, LOW);<br>
+        digitalWrite(8, LOW);<br>
+        }<br>
+        if (analog >= 800 && analog < 900) {<br>
+        digitalWrite(2, HIGH);<br>
+        <br>
+        digitalWrite(3, HIGH);<br>
+        digitalWrite(4, HIGH);<br>
+        digitalWrite(5, HIGH);<br>
+        digitalWrite(6, HIGH);<br>
+        digitalWrite(7, HIGH);<br>
+        digitalWrite(8, HIGH);<br>
+        }<br>
+        if (analog >= 900 && analog < 1023) {<br>
+        digitalWrite(2, HIGH);<br>
+        digitalWrite(3, HIGH);<br>
+        digitalWrite(4, HIGH);<br>
+        digitalWrite(5, LOW);<br>
+        digitalWrite(6, LOW);<br>
+        digitalWrite(7, HIGH);<br>
+        digitalWrite(8, HIGH);<br>
+        }<br>
+        delay(10); // Delay a little bit to i<br>
+        mprove simulation performance }<br></p>
+        <br>
+        <br>
+        <h1>Vídeo display de 7 segmentos</h1>
+        <div>
+            <video src="../video/WhatsApp Video 2025-12-04 at 15.57.40 (video-converter.com).mp4"controls style="height: 340px; width: 340px;"></video>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h1>Foto da Medição da Resistência no Potenciômetro de 10 k Ohms</h1>
+        <img src="../img/4.jpeg" alt="">
+        <img src="../img/2.jpeg" alt="">
+        <img src="../img/6.jpeg" alt="">
+        <br>
+        <hr>
+        <br>
+        <h1>Gráfico no arduíno</h1>
+        <img src="../img/WhatsApp Image 2025-12-10 at 19.03.16.jpeg" alt=""><br><br>
+        <br>
+        <br>
+        <div>
+            <video src="../video/WhatsApp Video 2025-12-10 at 19.03.16.mp4"controls style="height: 340px; width: 340px;"></video>
+        </div>
+
 </main>
 </body>
 </html>
