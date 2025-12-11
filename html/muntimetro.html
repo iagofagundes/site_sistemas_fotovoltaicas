@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="menu">
             <a href="../index.html">Sistemas Fotovoltaicos</a>
             <a href="./Tipos_de_sisitemas.html">Tipos de Sistemas</a>
             <a href="./Economia.html">Economia e Viabilidade Financeira</a>
@@ -17,6 +17,7 @@
             <a href="./prog_painel.html">Calculadora</a>
             <a href="./arduino.html">Arduíno</a>
             <a href="./muntimetro.html">Multimetro</a>
+            <a href="./projeto.html">Projeto</a>
             <a href="./contato.html">Contato</a>
         </nav>
     </header>
@@ -36,7 +37,61 @@
         <p>Temperatura (°C/°F)</p>
         <p>Teste de diodos</p>
         <h1>Escala de Medição</h1>
-        <p></p>
+        <p>A escala de medição é o intervalo de valores que o multímetro consegue medir adequadamente, sem risco de danos ou erros. Ela determina até onde o instrumento pode registrar tensões, correntes ou resistências com precisão.</p>
+        <p>Cada grandeza tem sua própria escala (ex.: 20 V, 200 Ω, 10 A).</p>
+        <p>Uma escala muito baixa pode causar sobrecarga no aparelho.</p>
+        <p>Uma escala muito alta pode dificultar a leitura, deixando valores imprecisos.</p>
+        <p>Escolher a escala certa garante segurança e resultados confiáveis.</p>
+        <br>
+        <br>
+        <h1>Lei usada pelo multímetro para realizar medidas</h1>
+        <p>O funcionamento do multímetro é baseado principalmente na Lei de Ohm (V = R·I), que relaciona tensão, corrente e resistência. A partir dessa relação, o multímetro calcula valores internos e converte as grandezas medidas em números visíveis na tela.</p>
+        <p>A Lei de Ohm permite derivar resistência, corrente ou tensão conforme o tipo de medição.</p>
+        <p>Shunts de corrente medem pequenas quedas de tensão para calcular amperagem.</p>
+        <p>Divisores resistivos reduzem tensões altas para níveis seguros.</p>
+        <p>Multímetros digitais usam conversores analógico-digitais (A/D) para exibir valores precisos.</p>
+        <br>
+        <br>
+        <h1>O que é teste de continuidade e para que serve</h1>
+        <p>O teste de continuidade avalia se há um caminho elétrico completo entre dois pontos, indicando se a eletricidade consegue circular sem interrupções. É um dos testes mais usados em manutenção de circuitos.</p>
+        <p>Se houver continuidade, o multímetro emite um bip.</p>
+        <p>Identifica fios quebrados ou com mau contato.</p>
+        <p>Detecta trilhas interrompidas em placas eletrônicas.</p>
+        <p>Ajuda a encontrar curtos de forma rápida.</p>
+        <p>Facilita a verificação de conexões em montagens e protótipos.</p>
+        <br>
+        <br>
+        <h1>Como medir resistência em um resistor</h1>
+        <p>A medição de resistência mostra quanto o resistor dificulta a passagem da corrente elétrica. É essencial para verificar se o componente está funcionando dentro dos valores esperados.</p>
+        <p>O circuito precisa estar desligado para evitar leituras falsas.</p>
+        <p>Selecionar a escala de resistência (Ω) antes de medir.</p>
+        <p>Tocar as pontas de prova nos dois terminais do resistor.</p>
+        <p>O multímetro calcula a resistência com base na corrente interna aplicada.</p>
+        <p>Permite identificar resistores queimados, alterados ou fora da tolerância.</p>
+        <br>
+        <br>
+        <h1>Como medir tensão em circuito com resistor e LED</h1>
+        <p>A medição de tensão mostra a diferença de potencial elétrico entre dois pontos do circuito. Em um circuito com resistor e LED, essa medição ajuda a entender como a energia está distribuída entre os componentes.</p>
+        <p>Configurar o multímetro na escala correta de tensão DC.</p>
+        <p>Medir sempre em paralelo, tocando os pontos desejados.</p>
+        <p>A ponta vermelha vai no ponto positivo e a preta no negativo (GND).</p>
+        <h4>A leitura mostrará:</h4>
+        <p>A tensão total da fonte.</p>
+        <p>A queda de tensão no resistor.</p>
+        <p>A queda de tensão no LED (geralmente entre 1,8 e 3,3 V).</p>
+        <p>Ajuda a confirmar se o LED está recebendo a tensão adequada para funcionar sem queimar.</p>
+        <br>
+        <br>
+        <h1>Como medir corrente elétrica no circuito</h1>
+        <p>A medição de corrente indica a quantidade de elétrons que passa por um ponto do circuito a cada segundo. É uma medida essencial para compreender o consumo e o funcionamento dos componentes.</p>
+        <p>É necessário mudar a ponta vermelha para a entrada própria de corrente (mA ou A).</p>
+        <p>Diferente da tensão, a corrente só pode ser medida em série.</p>
+        <p>O circuito deve ser “aberto” para que a corrente passe através do multímetro</p>
+        <p>O aparelho então lê a queda de tensão em um shunt interno e calcula a corrente.</p>
+        <p>Mede consumo de LED, resistores, motores e outros componentes.</p>
+        <p>Ajuda a evitar sobrecorrentes que podem danificar o circuito.</p>
+    
+    
     </main><br><br>
     <footer>
         by Iago &copy; &trade;
